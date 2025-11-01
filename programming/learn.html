@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>プログラミング学習の準備</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;family=Noto+Sans+JP:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1193d4",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "Noto Sans JP", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex min-h-screen w-full flex-col">
+<div class="flex h-full grow flex-col">
+<div class="flex flex-1 justify-center py-5 md:px-10 lg:px-20 xl:px-40">
+<div class="flex max-w-[960px] flex-1 flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-gray-700 px-4 md:px-10 py-3">
+<div class="flex items-center gap-4 text-gray-900 dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold tracking-[-0.015em]">学習ロードマップ</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="load.html">ロードマップ一覧</a>
+<a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="#">記事一覧</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">ログイン</span>
+</button>
+</div>
+<button class="md:hidden text-gray-800 dark:text-gray-200">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</header>
+<main class="flex flex-col gap-10 md:gap-16">
+<div class="@container px-4 py-10">
+<div class="flex flex-col gap-6 @[480px]:gap-8 @[864px]:flex-row">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg @[480px]:h-auto @[480px]:min-w-[400px] @[864px]:w-full" data-alt="A person coding on a laptop with abstract shapes floating around, representing creativity and logic." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB81Z318grO0h8xv9AUZjAHyD8-v7Hi4ZfX7a89oEHqm--9m3yhsK-D5hqH3BYr7PMHTErGtjUzXJ335IHRMdAyX6r07VRkcT3k6lBE7YqzaQgPmEN8GcA83pzHibkYl4V0RxhpiRYte0JnoFoex8ULIJf_ZMp0t8QB3K1kRDvFcc1s255oa6E9_NC2bz7omhm-SthZSN57F0yYPglf2UWOfn3Yv5Mn03N_gAKXgPxG_lWQTfbDerrLHkn3PkRoLQQdrq7EQa_Juz-C");'></div>
+<div class="flex flex-col gap-6 @[480px]:min-w-[400px] @[480px]:gap-8 @[864px]:justify-center">
+<div class="flex flex-col gap-2 text-left">
+<h1 class="text-gray-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">プログラミング学習、はじめの一歩</h1>
+<h2 class="text-base font-normal leading-normal text-gray-600 dark:text-gray-400">学習を始める前の準備と心構えを整え、挫折しないためのスタートを切りましょう。</h2>
+</div>
+</div>
+</div>
+</div>
+<section class="px-4">
+<h2 class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5">なぜプログラミングを学ぶのか？</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="flex flex-1 flex-col gap-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-4">
+<div class="text-primary"><span class="material-symbols-outlined text-3xl">work</span></div>
+<div class="flex flex-col gap-1">
+<h3 class="text-base font-bold text-gray-900 dark:text-white">キャリアの可能性が広がる</h3>
+<p class="text-sm font-normal text-gray-600 dark:text-gray-400">IT業界だけでなく、様々な分野で活躍の場が生まれます。</p>
+</div>
+</div>
+<div class="flex flex-1 flex-col gap-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-4">
+<div class="text-primary"><span class="material-symbols-outlined text-3xl">lightbulb</span></div>
+<div class="flex flex-col gap-1">
+<h3 class="text-base font-bold text-gray-900 dark:text-white">問題解決能力が向上する</h3>
+<p class="text-sm font-normal text-gray-600 dark:text-gray-400">論理的思考力が身につき、複雑な課題を解決できます。</p>
+</div>
+</div>
+<div class="flex flex-1 flex-col gap-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-4">
+<div class="text-primary"><span class="material-symbols-outlined text-3xl">palette</span></div>
+<div class="flex flex-col gap-1">
+<h3 class="text-base font-bold text-gray-900 dark:text-white">創造性を自由に発揮できる</h3>
+<p class="text-sm font-normal text-gray-600 dark:text-gray-400">自分のアイデアを形にし、新しいサービスを生み出せます。</p>
+</div>
+</div>
+</div>
+</section>
+<section class="px-4">
+<h2 class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5">よくある挫折ポイントとその乗り越え方</h2>
+<div class="flex flex-col gap-3">
+<details class="group rounded-lg bg-white dark:bg-gray-800/50 p-4 border border-gray-200 dark:border-gray-700">
+<summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+<span class="text-base text-gray-900 dark:text-white">エラーが解決できない</span>
+<span class="transition group-open:rotate-180"><svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg></span>
+</summary>
+<p class="group-open:animate-fadeIn mt-3 text-sm text-gray-600 dark:text-gray-400">エラーメッセージを正確に読み取り、コピーして検索するのが第一歩です。Stack OverflowやteratailなどのQ&amp;Aサイトを活用したり、公式ドキュメントを参照する習慣をつけましょう。</p>
+</details>
+<details class="group rounded-lg bg-white dark:bg-gray-800/50 p-4 border border-gray-200 dark:border-gray-700">
+<summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+<span class="text-base text-gray-900 dark:text-white">モチベーションが続かない</span>
+<span class="transition group-open:rotate-180"><svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg></span>
+</summary>
+<p class="group-open:animate-fadeIn mt-3 text-sm text-gray-600 dark:text-gray-400">一緒に学ぶ仲間を見つけるのが効果的です。SNSの学習コミュニティに参加したり、もくもく会に参加して進捗を共有しましょう。小さな目標を立てて、達成感を積み重ねることも大切です。</p>
+</details>
+<details class="group rounded-lg bg-white dark:bg-gray-800/50 p-4 border border-gray-200 dark:border-gray-700">
+<summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+<span class="text-base text-gray-900 dark:text-white">何を作ればいいかわからない</span>
+<span class="transition group-open:rotate-180"><svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg></span>
+</summary>
+<p class="group-open:animate-fadeIn mt-3 text-sm text-gray-600 dark:text-gray-400">まずは既存のサービスのクローン（模写）から始めましょう。チュートリアルを参考に簡単なアプリを作ることで、開発の一連の流れを掴むことができます。自分の興味がある分野や、身の回りの課題を解決するツールを考えてみるのも良いでしょう。</p>
+</details>
+</div>
+</section>
+<section class="px-4">
+<h2 class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5">万全な学習環境を整えよう</h2>
+<div class="flex flex-col gap-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-4 md:p-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-green-500 mt-1">check_circle</span>
+<div>
+<h3 class="font-bold text-gray-900 dark:text-white">PCの準備</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400">メモリ8GB以上、SSD搭載のPCを推奨します。OSはWindows, Mac, Linuxのいずれでも問題ありません。</p>
+</div>
+</div>
+<div class="w-full border-t border-gray-200 dark:border-gray-700"></div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-green-500 mt-1">check_circle</span>
+<div>
+<h3 class="font-bold text-gray-900 dark:text-white">ツールの準備</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400">推奨エディタはVSCodeです。公式サイトからダウンロードしてインストールしましょう。</p>
+</div>
+</div>
+<div class="w-full border-t border-gray-200 dark:border-gray-700"></div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-green-500 mt-1">check_circle</span>
+<div>
+<h3 class="font-bold text-gray-900 dark:text-white">アカウントの準備</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400">GitHubアカウントは、ソースコードの管理やポートフォリオの公開に必須です。無料で作成できます。</p>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col items-center gap-6 rounded-lg bg-white dark:bg-gray-800/50 p-8 m-4 text-center border border-gray-200 dark:border-gray-700">
+<h2 class="text-xl md:text-2xl font-bold text-gray-900 dark:text-white">準備完了！次のステップへ</h2>
+<p class="max-w-xl text-gray-600 dark:text-gray-400">お疲れ様でした！学習の準備は万端です。さあ、最初の言語を選んで、プログラミングの世界へ飛び込みましょう。</p>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">最初の言語を選んで学習を始める</span>
+</button>
+</section>
+</main>
+<footer class="mt-16 border-t border-gray-200 dark:border-gray-700 px-4 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-4 text-gray-900 dark:text-white">
+<div class="size-5 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-base font-bold">学習ロードマップ</h2>
+</div>
+<nav class="flex gap-6 text-sm">
+<a class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary" href="#">運営会社</a>
+<a class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary" href="#">プライバシーポリシー</a>
+<a class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary" href="#">お問い合わせ</a>
+</nav>
+<p class="text-xs text-gray-500">© 2024 Learning Roadmap. All rights reserved.</p>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>

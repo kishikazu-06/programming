@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>プログラミング学習ロードマップ</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;family=Noto+Sans+JP:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+      body {
+        font-family: 'Inter', 'Noto Sans JP', sans-serif;
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#4A90E2",
+              "secondary": "#50E3C2",
+              "accent": "#F8E71C",
+              "background-light": "#F8F9FA",
+              "background-dark": "#101c22",
+              "text-light": "#333333",
+              "text-dark": "#F8F9FA",
+              "subtext-light": "#6c757d",
+              "subtext-dark": "#adb5bd"
+            },
+            fontFamily: {
+              "display": ["Inter", "Noto Sans JP", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.5rem",
+              "lg": "0.75rem",
+              "xl": "1rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1 px-4 md:px-0">
+<!-- HeroSection -->
+<div class="@container py-10 md:py-16">
+<div class="flex flex-col gap-8 px-4 @[864px]:flex-row @[864px]:items-center">
+<div class="flex-1 flex flex-col gap-6 @[480px]:gap-8 @[864px]:justify-center">
+<div class="flex flex-col gap-2 text-left">
+<h1 class="text-4xl font-black leading-tight tracking-tight text-text-light dark:text-text-dark @[480px]:text-5xl">
+                                あなたのプログラミング学習、ここから始めよう。
+                            </h1>
+<h2 class="text-base font-normal leading-normal text-subtext-light dark:text-subtext-dark @[480px]:text-lg">
+                                プログラミング学習の全体像を掴み、あなたに合った専門分野への第一歩を踏み出しましょう。
+                            </h2>
+</div>
+<button class="flex w-full sm:w-auto max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-wide hover:bg-opacity-90 transition-colors">
+<span class="truncate">ロードマップを開始</span>
+</button>
+</div>
+<div class="flex-1 w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl" data-alt="Abstract gradient illustration representing technology and learning" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDqd1fOZTtS6SRGYHpA5eRmHEX7AShxnnb2PpvUFnR8xSuNY-0cfiwkgDg3wuSRGOPD13tKfsOO6-aUJAVrywE_tpgPZE0PLUNu_es0STfO2DsaygVG2M1aR-tXi32fKERTSfEBU0K0jIA4-0kXGaO1e5okTih51DfNDIRZU6mSIabawURKS-J72Gshy3Z6yiG3yELqymjtd0sHlq7y04rtpnbs6xrcSOwp2qHdK9LfIlUO8g16PUiTNwn42kU8fQLdgzMap8UoN4_j");'></div>
+</div>
+</div>
+<!-- Section 1: Beginner Roadmap -->
+<div class="py-10 md:py-16">
+<!-- SectionHeader -->
+<h2 class="text-3xl font-bold leading-tight tracking-tight text-text-light dark:text-text-dark px-4 pb-3 pt-5 text-center">まずはここから！超初心者向けロードマップ</h2>
+<!-- BodyText -->
+<p class="text-base font-normal leading-normal text-subtext-light dark:text-subtext-dark pb-8 pt-1 px-4 text-center">
+                    すべての開発者に共通する、はじめの一歩です。以下のステップを順に進めて、プログラミングの基礎を固めましょう。
+                </p>
+<!-- Timeline -->
+<div class="grid grid-cols-[auto_1fr] gap-x-4 px-4 max-w-2xl mx-auto">
+<div class="flex flex-col items-center gap-1 pt-3">
+<div class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">lightbulb</span>
+</div>
+<div class="w-[2px] bg-primary/20 grow"></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-lg font-bold leading-normal text-text-light dark:text-text-dark">プログラミング的思考</p>
+<p class="text-base font-normal leading-normal text-subtext-light dark:text-subtext-dark">問題解決能力を養う</p>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-[2px] bg-primary/20 h-full"></div>
+</div>
+<div class="flex flex-1 flex-col py-3"></div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-[2px] bg-primary/20 grow"></div>
+<div class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">dns</span>
+</div>
+<div class="w-[2px] bg-primary/20 grow"></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-lg font-bold leading-normal text-text-light dark:text-text-dark">Webサイトの仕組み</p>
+<p class="text-base font-normal leading-normal text-subtext-light dark:text-subtext-dark">クライアントとサーバー</p>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-[2px] bg-primary/20 h-full"></div>
+</div>
+<div class="flex flex-1 flex-col py-3"></div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-[2px] bg-primary/20 grow"></div>
+<div class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">code</span>
+</div>
+<div class="w-[2px] bg-primary/20 grow"></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-lg font-bold leading-normal text-text-light dark:text-text-dark">HTML/CSS</p>
+<p class="text-base font-normal leading-normal text-subtext-light dark:text-subtext-dark">Webページの骨格と見た目</p>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-[2px] bg-primary/20 h-full"></div>
+</div>
+<div class="flex flex-1 flex-col py-3"></div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-[2px] bg-primary/20 grow"></div>
+<div class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">javascript</span>
+</div>
+<div class="w-[2px] bg-primary/20 grow"></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-lg font-bold leading-normal text-text-light dark:text-text-dark">JavaScript</p>
+<p class="text-base font-normal leading-normal text-subtext-light dark:text-subtext-dark">Webページに動きをつける</p>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-[2px] bg-primary/20 h-full"></div>
+</div>
+<div class="flex flex-1 flex-col py-3"></div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-[2px] bg-primary/20 grow"></div>
+<div class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">hub</span>
+</div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-lg font-bold leading-normal text-text-light dark:text-text-dark">Git/GitHub</p>
+<p class="text-base font-normal leading-normal text-subtext-light dark:text-subtext-dark">バージョン管理の基礎</p>
+</div>
+</div>
+</div>
+<!-- Section 2: Specialization Roadmap -->
+<div class="py-10 md:py-16">
+<!-- SectionHeader -->
+<h2 class="text-3xl font-bold leading-tight tracking-tight text-text-light dark:text-text-dark px-4 pb-3 pt-5 text-center">専門分野を選んで、次のステップへ進もう</h2>
+<!-- BodyText -->
+<p class="text-base font-normal leading-normal text-subtext-light dark:text-subtext-dark pb-10 pt-1 px-4 text-center">
+                    興味のある分野をクリックして、詳細なロードマップを見てみよう。
+                </p>
+<!-- Cards Section -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 px-4">
+<!-- Card 1: Web Development -->
+<div class="flex flex-col gap-4 p-6 bg-white dark:bg-background-dark/50 border border-gray-200 dark:border-gray-700 rounded-xl hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-3xl">devices</span>
+</div>
+<h3 class="text-xl font-bold text-text-light dark:text-text-dark">Web開発</h3>
+</div>
+<p class="text-base text-subtext-light dark:text-subtext-dark">フロントエンドとバックエンドの技術を学び、動的なWebサイトやアプリケーションを構築します。</p>
+<a class="mt-auto text-primary font-bold hover:underline" href="webLoad.html">詳細を見る →</a>
+</div>
+<!-- Card 2: Mobile App Development -->
+<div class="flex flex-col gap-4 p-6 bg-white dark:bg-background-dark/50 border border-gray-200 dark:border-gray-700 rounded-xl hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center w-12 h-12 rounded-lg bg-secondary/20 text-secondary">
+<span class="material-symbols-outlined text-3xl">phone_iphone</span>
+</div>
+<h3 class="text-xl font-bold text-text-light dark:text-text-dark">モバイルアプリ開発</h3>
+</div>
+<p class="text-base text-subtext-light dark:text-subtext-dark">iOSやAndroid向けのネイティブアプリ開発を学び、スマートフォンで動作するアプリを創り出します。</p>
+<a class="mt-auto text-primary font-bold hover:underline" href="#">詳細を見る →</a>
+</div>
+<!-- Card 3: Data Science -->
+<div class="flex flex-col gap-4 p-6 bg-white dark:bg-background-dark/50 border border-gray-200 dark:border-gray-700 rounded-xl hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center w-12 h-12 rounded-lg bg-accent/20 text-yellow-600">
+<span class="material-symbols-outlined text-3xl">analytics</span>
+</div>
+<h3 class="text-xl font-bold text-text-light dark:text-text-dark">データサイエンス・機械学習</h3>
+</div>
+<p class="text-base text-subtext-light dark:text-subtext-dark">データの分析、可視化、そして機械学習モデルの構築を通じて、データから価値を見出します。</p>
+<a class="mt-auto text-primary font-bold hover:underline" href="#">詳細を見る →</a>
+</div>
+<!-- Card 4: Game Development -->
+<div class="flex flex-col gap-4 p-6 bg-white dark:bg-background-dark/50 border border-gray-200 dark:border-gray-700 rounded-xl hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center w-12 h-12 rounded-lg bg-red-500/10 text-red-500">
+<span class="material-symbols-outlined text-3xl">stadia_controller</span>
+</div>
+<h3 class="text-xl font-bold text-text-light dark:text-text-dark">ゲーム開発</h3>
+</div>
+<p class="text-base text-subtext-light dark:text-subtext-dark">ゲームエンジンを使い、2Dや3Dのインタラクティブなゲームの世界を創造します。</p>
+<a class="mt-auto text-primary font-bold hover:underline" href="#">詳細を見る →</a>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="mt-16 py-8 border-t border-gray-200 dark:border-gray-700">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 px-4 text-center">
+<p class="text-sm text-subtext-light dark:text-subtext-dark">© 2024 プログラミング学習ロードマップ. All rights reserved.</p>
+<div class="flex gap-4">
+<a class="text-sm text-subtext-light dark:text-subtext-dark hover:text-primary" href="#">運営者情報</a>
+<a class="text-sm text-subtext-light dark:text-subtext-dark hover:text-primary" href="#">プライバシーポリシー</a>
+<a class="text-sm text-subtext-light dark:text-subtext-dark hover:text-primary" href="#">お問い合わせ</a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>プログラミング学習リソースガイド</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1193d4",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+          },
+          fontFamily: {
+            "display": ["Inter", "Noto Sans JP", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-4 sm:px-6 lg:px-10 py-3 bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-10">
+<div class="flex items-center gap-4 text-slate-900 dark:text-slate-100">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em]">学習ロードマップ</h2>
+</div>
+<div class="flex flex-1 justify-end items-center gap-4 sm:gap-8">
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="load.html">ロードマップ一覧</a>
+<a class="text-primary dark:text-primary text-sm font-bold leading-normal" href="#">リソース</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="#">ブログ</a>
+</nav>
+<div class="flex gap-2">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">ログイン</span>
+</button>
+<button class="hidden sm:flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">会員登録</span>
+</button>
+</div>
+</div>
+</header>
+<div class="flex flex-1 justify-center p-4 sm:p-6 lg:p-10">
+<div class="layout-content-container flex flex-col w-full max-w-7xl">
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between gap-4 p-4">
+<div class="flex min-w-72 flex-col gap-3">
+<p class="text-slate-900 dark:text-slate-100 text-4xl font-black leading-tight tracking-[-0.033em]">学習リソースガイド</p>
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal leading-normal">このページでは、プログラミング学習に役立つオンラインプラットフォーム、書籍、技術ブログなど、多様なリソースを紹介しています。</p>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row gap-8 mt-4">
+<!-- Sidebar -->
+<aside class="w-full lg:w-64 shrink-0">
+<div class="p-4 rounded-xl bg-white dark:bg-background-dark border border-slate-200 dark:border-slate-800">
+<h3 class="text-lg font-bold text-slate-900 dark:text-slate-100 mb-4">絞り込み</h3>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-slate-600 dark:text-slate-400 mb-3">カテゴリ</h4>
+<ul class="space-y-2">
+<li><a class="text-primary font-medium" href="#">すべて</a></li>
+<li><a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary" href="#">オンライン学習</a></li>
+<li><a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary" href="#">書籍</a></li>
+<li><a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary" href="#">ドキュメント</a></li>
+<li><a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary" href="#">ブログ・技術記事</a></li>
+<li><a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary" href="#">コミュニティ</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-sm font-semibold text-slate-600 dark:text-slate-400 mb-3">対象レベル</h4>
+<div class="space-y-2">
+<label class="flex items-center gap-2 text-slate-700 dark:text-slate-300">
+<input class="rounded border-slate-300 dark:border-slate-700 text-primary focus:ring-primary/50 bg-slate-100 dark:bg-slate-900" type="checkbox"/>
+<span>初心者</span>
+</label>
+<label class="flex items-center gap-2 text-slate-700 dark:text-slate-300">
+<input class="rounded border-slate-300 dark:border-slate-700 text-primary focus:ring-primary/50 bg-slate-100 dark:bg-slate-900" type="checkbox"/>
+<span>中級者</span>
+</label>
+<label class="flex items-center gap-2 text-slate-700 dark:text-slate-300">
+<input class="rounded border-slate-300 dark:border-slate-700 text-primary focus:ring-primary/50 bg-slate-100 dark:bg-slate-900" type="checkbox"/>
+<span>上級者</span>
+</label>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1">
+<div class="flex flex-col md:flex-row md:items-center gap-4 px-4 pb-4">
+<!-- SearchBar -->
+<div class="flex-1">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-slate-500 dark:text-slate-400 flex bg-white dark:bg-slate-800 items-center justify-center pl-4 rounded-l-lg border border-r-0 border-slate-200 dark:border-slate-700">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 dark:text-slate-100 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-l-0 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 h-full placeholder:text-slate-500 dark:placeholder:text-slate-400 px-4 rounded-l-none pl-2 text-base font-normal leading-normal" placeholder="キーワードでリソースを検索" value=""/>
+</div>
+</label>
+</div>
+<!-- Chips / Sort -->
+<div class="flex gap-3 overflow-x-auto pb-2">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-4">
+<p class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal">人気順</p>
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400 text-base">expand_more</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-4">
+<p class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal">新着順</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-4">
+<p class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal">おすすめ</p>
+</button>
+</div>
+</div>
+<!-- ImageGrid -->
+<div class="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-6 p-4">
+<div class="flex flex-col gap-3 pb-3 bg-white dark:bg-slate-800 rounded-xl p-4 border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:-translate-y-1 transition-all">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Udemy logo on a purple background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBKbMfg6Lt8DRIBsbQzo4II6QNHyAGAEi947SRgDGa-JgNLeYwKhILkT2287ASponP3p4oUabBSzXISelIiCr-TiqqyMPAvgLlyatCexceaf8hH0WQ80suQr4FP71zvbq7q_fsklTF4qPFS8dpwQLtcnsmtOl_MxwC1CK6NOaO_FKk7mwDyf2hi9rvvURmRY8XJtvNjbqBEnP5X-M6YQ8XaJGbUCtDiPD9Z2OGlZoHJT0i7mTb6uoPadabd37HsyrDAr-6p5wpfFbx4");'></div>
+<div>
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-normal">Udemy</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal mt-1">動画で学ぶオンライン学習プラットフォーム</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-normal leading-normal mt-2">初心者向け</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-white dark:bg-slate-800 rounded-xl p-4 border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:-translate-y-1 transition-all">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Progate logo on a light blue background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD1QJYcHpT3V5FgRg1ZDBukQBTMTB86MOpVzJhyNIY5_u4jS-A03wUDuuTeA2z3hET20TgrxbKbbSLWcVp2i3Ts6AOrEU9_m1vju1sGXcbFjhcCbz3T2qPCj-PM2Bt_Ev7PeLwX0t7cFqC5DsmapT_sor1Ebr66ZYRzMNC4EK4J-NKifu4L89P5t2blvZwpky4TeJ3M2uJvvu-k4B2i6ytdcCGlmK_rGZ0AkSETfDq3__FoY8dePvAJVZaRJ4-HfAPeH0jos3_f6WeY");'></div>
+<div>
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-normal">Progate</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal mt-1">スライド形式で楽しく学べる初心者向けサイト</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-normal leading-normal mt-2">初心者向け</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-white dark:bg-slate-800 rounded-xl p-4 border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:-translate-y-1 transition-all">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="MDN Web Docs logo on a black background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA5iL0dFD2m2OjjZ1DVnD0ITSP8BVoRPOLmJ4_OZ837yc0Bd52Rqp4niQbm3oPd4pAPZZn-UdtzwNlRNvf1hDjoaAMqq_OEMaY-ds6Ejvn3cBQBegEz2ygLWZJtqkoKTdU-aQ-wDekM6EWommxe_57qhux9z2DnwXK7Ib126Mpxm1aTb3WDD5KloZIoeJzkqk-tRXX9xhq8z-fsK-zjg40KEKqzZ3Y2k2dmWNzS9mAZxhAPD0ICzUk8wKMiSmEaO-nf-WeE1K3eMpHA");'></div>
+<div>
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-normal">MDN Web Docs</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal mt-1">Web技術の公式リファレンスドキュメント</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-normal leading-normal mt-2">全レベル</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-white dark:bg-slate-800 rounded-xl p-4 border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:-translate-y-1 transition-all">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="A book cover for '達人プログラマー'" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAP9jqdWT_5vvijyL1nDaQ_LHjw_S2rqP7RgeqAEaPtkCWdcCkJtRIVVvU4gU-b1kgvvJBHKbgEkzhKqDvc1U_nt8hsrKwbrx8it9cSbbyRa2TjkOW2tap27T6YewWXHnF0IJT8_61TjFzO6lZGit0BB6od5cT6nQJ3NJkcePQcK_5wsQPjQYUfCTLjw2KcuBSMaLMNQ3MC9wuX7JpRE0EFe-6LT2adIrDYkDWMv_to98mdt5032V-E_oUvpiq3hzsVr0bkvwp9FtcC");'></div>
+<div>
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-normal">達人プログラマー</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal mt-1">プロフェッショナルな開発者を目指すための名著</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-normal leading-normal mt-2">中級者向け</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-white dark:bg-slate-800 rounded-xl p-4 border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:-translate-y-1 transition-all">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Qiita logo on a green background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCtC_PVkObjO4pzVkOyZJPoktppW_-nCwsKzltZPzSZz0XvyFMP28DcKUyLQeSt5lZd1yYsqzHHylZAJ9avi1MuhE8u8Tt-3Yc9lXAMfrajYNSVg1_xRgZiKdjc0okyx249wrF91hLaZfOZVuN8c0kDu-YEOXD25dueTBvDaaCEwki5dVjiAgj8isCzkPtnmBFFBiPjn1OaL8UCXa-oUgajJBIAhXfFCga0eisu8hjATWkCo_iB11S-8YcJ54Qey00N46PHhiUG4wve");'></div>
+<div>
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-normal">Qiita</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal mt-1">プログラマのための技術情報共有サービス</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-normal leading-normal mt-2">全レベル</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-white dark:bg-slate-800 rounded-xl p-4 border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:-translate-y-1 transition-all">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Zenn logo on a blue background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDVVuK6Ipcl8m6ZQqDscq785BEKpBAJ0loyF5B16LY4ExfzAdc14cKINv3VtEtgJmoKHyccLfHQB4RliHxOundhib9plFv_kgjSlqvOYqni3x5TSv4u-5EsS1f-U40Az0AQlAXE0pm5TMbGe4BR2VmiOcOgTsOzKzfMKDDAF0Q7y5NTJPeH1yVbzWjI76ygYo9_r5o5N9xrfiJNH4yK6S7XBwYGQGMIasQnaL0qYLIkmnbOb1XmKAK52e9eXcLPv0x2O8WRQwD6VJ2c");'></div>
+<div>
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-normal">Zenn</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal mt-1">エンジニアのための情報共有コミュニティ</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-normal leading-normal mt-2">全レベル</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-white dark:bg-slate-800 rounded-xl p-4 border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:-translate-y-1 transition-all">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="ドットインストール logo on a dark gray background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDf5krld8xNC1PQDp0JrJq2l-p5mjZipXJswiX4asy3Jna3QwiwSgnPt8gqEUns_SOCMJXxbYZ08ZQSVI6A_Xuwu-qdd1i7a2n9S2AmtR_VBpYjT-SR3ind_q-CyuNW_FZhLwez8GLRspATiVPPYpD7TE8UnF9seu7aC-3CeR80arpBFkYSb3_ROcTG2GCtWSCSOp6uulLUrsJnKEZiggjlUlCkU91fBwF-v4ns9dhsNNQS56yN61t32MCzFqy1zuDSVfNNau00lFKF");'></div>
+<div>
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-normal">ドットインストール</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal mt-1">3分動画でマスターするプログラミング学習サービス</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-normal leading-normal mt-2">初心者向け</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-white dark:bg-slate-800 rounded-xl p-4 border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:-translate-y-1 transition-all">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="freeCodeCamp logo on a dark green background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA5u40CwrUcguvNelZPRI_4AY3Yv2Vq7pjPp2gDFejwWwwMY0IwH3RMdD64GAly5DGWKmq2ES4xTHLpylEhEzUgmXoqdGgCA-ovtSfpPtgu4d2XBl3YSPC85Cn78R-Z0uRYnRaYrnIASWql8euxfyf6TN3cQ1Hl5au_j8czqScEdsXE1Sv5VBzg1IYuzjQIj4oxxbUquJ4HJAre2zKnIfoUQ6urpucJp54_kzUkVhOCVXg6fn3Nho7qKIJ1mzHTNyPNthKGB1vM4B9a");'></div>
+<div>
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-normal">freeCodeCamp</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal mt-1">無料でコーディングを学べる国際的コミュニティ</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-normal leading-normal mt-2">初心者〜中級者</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-white dark:bg-slate-800 rounded-xl p-4 border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:-translate-y-1 transition-all">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Stack Overflow logo on an orange background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDulgXRnius_lqHP0TWjKfZm81Rgq_d-5DAN3nXXlJxhLWGUA6ZcJbbFA8RjYE21MX7k5LLWAc25zL5kplKybV3OAoacPwVcG51_qa6zibndbBrvMjFiF6ea88PPbqIC3LqhwAvEPtpPIaDda6lpHJl7HTiCaq03bg8Py3EiZfoPpYN6i6SZcrXvAan3QcxIDXoUxKst_Qxd3tABBhKiohY_zg7FATO7hBvZZuvhcqY6C-VF94LJgzI5Jk_KLttFSMmUx9itdbfGReY");'></div>
+<div>
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-normal">Stack Overflow</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal mt-1">世界中の開発者が集まるQ&amp;Aサイト</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-normal leading-normal mt-2">全レベル</p>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="bg-white dark:bg-slate-900/50 border-t border-slate-200 dark:border-slate-800 mt-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div>
+<h4 class="text-sm font-semibold text-slate-900 dark:text-slate-100 tracking-wider uppercase">ロードマップ</h4>
+<ul class="mt-4 space-y-2">
+<li><a class="text-base text-slate-500 dark:text-slate-400 hover:text-primary" href="#">フロントエンド</a></li>
+<li><a class="text-base text-slate-500 dark:text-slate-400 hover:text-primary" href="#">バックエンド</a></li>
+<li><a class="text-base text-slate-500 dark:text-slate-400 hover:text-primary" href="#">DevOps</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-sm font-semibold text-slate-900 dark:text-slate-100 tracking-wider uppercase">リソース</h4>
+<ul class="mt-4 space-y-2">
+<li><a class="text-base text-slate-500 dark:text-slate-400 hover:text-primary" href="#">オンライン学習</a></li>
+<li><a class="text-base text-slate-500 dark:text-slate-400 hover:text-primary" href="#">書籍</a></li>
+<li><a class="text-base text-slate-500 dark:text-slate-400 hover:text-primary" href="#">ブログ</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-sm font-semibold text-slate-900 dark:text-slate-100 tracking-wider uppercase">会社情報</h4>
+<ul class="mt-4 space-y-2">
+<li><a class="text-base text-slate-500 dark:text-slate-400 hover:text-primary" href="#">私たちについて</a></li>
+<li><a class="text-base text-slate-500 dark:text-slate-400 hover:text-primary" href="#">お問い合わせ</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-sm font-semibold text-slate-900 dark:text-slate-100 tracking-wider uppercase">法務</h4>
+<ul class="mt-4 space-y-2">
+<li><a class="text-base text-slate-500 dark:text-slate-400 hover:text-primary" href="#">利用規約</a></li>
+<li><a class="text-base text-slate-500 dark:text-slate-400 hover:text-primary" href="#">プライバシーポリシー</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-8 border-t border-slate-200 dark:border-slate-800 pt-8 flex items-center justify-between">
+<p class="text-base text-slate-400">© 2024 学習ロードマップ. All rights reserved.</p>
+<div class="flex space-x-6">
+<!-- Social media icons can be added here -->
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

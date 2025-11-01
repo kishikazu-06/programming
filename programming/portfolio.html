@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ポートフォリオ作成ガイド</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#4A90E2",
+            "secondary": "#50E3C2",
+            "background-light": "#F8F9FA",
+            "background-dark": "#101c22",
+            "text-light": "#212529",
+            "text-dark": "#F8F9FA",
+            "border-light": "#DEE2E6",
+            "border-dark": "#495057",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px",
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<div class="container mx-auto flex flex-1 px-4 py-8 md:py-12">
+<div class="flex w-full flex-col lg:flex-row lg:gap-8">
+<!-- Sidebar Navigation -->
+<aside class="w-full shrink-0 lg:w-64 mb-8 lg:mb-0">
+<div class="sticky top-8 flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Abstract gradient logo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCAg9Q4QRlNYU2uLi3n8519dvrx814r1XLr6vqPnEH-EewwxggtCvwfPr2Ym0E43YcsUK6Q3hSq92Nz2Z-rBYL2V3-YIZ6kMoOcz1Ze480fL9CPRlDdyWCkTfCbx2ZZ4PtIJoqPY9qIRS_AzYRXp4DOaDJ85vnBuS1pJ1tLSbjJuvimhbStS6mNWfDm9enrPb0QUoqLHs9RWZaokcj1KE64xyXvSE4R9Or9KkAiSBItv_jhhO1CGfIF5cwLvZVjwLBqnu0qfUKdL4oV");'></div>
+<div class="flex flex-col">
+<h1 class="text-base font-bold text-text-light dark:text-text-dark">学習ロードマップ</h1>
+<p class="text-sm text-gray-500 dark:text-gray-400">ポートフォリオ作成ガイド</p>
+</div>
+</div>
+<nav class="flex flex-col gap-1">
+<a class="flex items-center gap-3 rounded-md bg-primary/10 dark:bg-primary/20 px-3 py-2 text-primary dark:text-secondary" href="#introduction">
+<span class="material-symbols-outlined text-xl">spark</span>
+<p class="text-sm font-medium">はじめに</p>
+</a>
+<a class="flex items-center gap-3 rounded-md px-3 py-2 hover:bg-gray-200 dark:hover:bg-gray-700/50" href="#why">
+<span class="material-symbols-outlined text-xl text-gray-600 dark:text-gray-400">help_outline</span>
+<p class="text-sm font-medium text-text-light dark:text-text-dark">なぜ必要か？</p>
+</a>
+<a class="flex items-center gap-3 rounded-md px-3 py-2 hover:bg-gray-200 dark:hover:bg-gray-700/50" href="#idea">
+<span class="material-symbols-outlined text-xl text-gray-600 dark:text-gray-400">lightbulb</span>
+<p class="text-sm font-medium text-text-light dark:text-text-dark">アイデア出し</p>
+</a>
+<a class="flex items-center gap-3 rounded-md px-3 py-2 hover:bg-gray-200 dark:hover:bg-gray-700/50" href="#design">
+<span class="material-symbols-outlined text-xl text-gray-600 dark:text-gray-400">design_services</span>
+<p class="text-sm font-medium text-text-light dark:text-text-dark">企画・設計</p>
+</a>
+<a class="flex items-center gap-3 rounded-md px-3 py-2 hover:bg-gray-200 dark:hover:bg-gray-700/50" href="#implement">
+<span class="material-symbols-outlined text-xl text-gray-600 dark:text-gray-400">rocket_launch</span>
+<p class="text-sm font-medium text-text-light dark:text-text-dark">実装・デプロイ</p>
+</a>
+<a class="flex items-center gap-3 rounded-md px-3 py-2 hover:bg-gray-200 dark:hover:bg-gray-700/50" href="#appeal">
+<span class="material-symbols-outlined text-xl text-gray-600 dark:text-gray-400">campaign</span>
+<p class="text-sm font-medium text-text-light dark:text-text-dark">効果的なアピール方法</p>
+</a>
+<a class="flex items-center gap-3 rounded-md px-3 py-2 hover:bg-gray-200 dark:hover:bg-gray-700/50" href="#next">
+<span class="material-symbols-outlined text-xl text-gray-600 dark:text-gray-400">arrow_forward</span>
+<p class="text-sm font-medium text-text-light dark:text-text-dark">次のステップ</p>
+</a>
+</nav>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="w-full">
+<div class="flex flex-col space-y-12">
+<!-- Page Heading -->
+<section class="flex flex-col gap-3" id="introduction">
+<p class="text-4xl font-black leading-tight tracking-tight text-text-light dark:text-text-dark">成功するポートフォリオの作り方：アイデア出しから公開まで</p>
+<p class="text-base text-gray-600 dark:text-gray-400">このガイドを読めば、あなたの技術力を証明し、次のキャリアに繋がるポートフォリオが完成します。</p>
+</section>
+<!-- Why Section -->
+<section class="flex flex-col gap-4" id="why">
+<h2 class="border-b border-border-light dark:border-border-dark pb-2 text-[22px] font-bold tracking-tight text-text-light dark:text-text-dark">なぜポートフォリオが必要か？</h2>
+<p class="text-base leading-relaxed text-gray-700 dark:text-gray-300">就職・転職活動において、ポートフォリオはあなたのスキルと情熱を具体的に示す最も効果的な手段です。学習した技術をどのように活用できるかを、採用担当者に直接アピールすることができます。</p>
+</section>
+<!-- Process Flow Section -->
+<section class="flex flex-col gap-4" id="overview">
+<h2 class="border-b border-border-light dark:border-border-dark pb-2 text-[22px] font-bold tracking-tight text-text-light dark:text-text-dark">ポートフォリオ作成の全体像</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+<div class="flex flex-col items-center gap-2 p-4 bg-white dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg">
+<span class="material-symbols-outlined text-3xl text-primary">lightbulb</span>
+<p class="font-semibold">アイデア出し</p>
+</div>
+<div class="flex flex-col items-center gap-2 p-4 bg-white dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg">
+<span class="material-symbols-outlined text-3xl text-primary">design_services</span>
+<p class="font-semibold">企画・設計</p>
+</div>
+<div class="flex flex-col items-center gap-2 p-4 bg-white dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg">
+<span class="material-symbols-outlined text-3xl text-primary">code</span>
+<p class="font-semibold">実装</p>
+</div>
+<div class="flex flex-col items-center gap-2 p-4 bg-white dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg">
+<span class="material-symbols-outlined text-3xl text-primary">rocket_launch</span>
+<p class="font-semibold">公開</p>
+</div>
+</div>
+</section>
+<!-- Checklist Section -->
+<section class="flex flex-col gap-4" id="design">
+<h2 class="border-b border-border-light dark:border-border-dark pb-2 text-[22px] font-bold tracking-tight text-text-light dark:text-text-dark">企画・設計のチェックリスト</h2>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<div class="flex h-5 items-center">
+<input class="h-4 w-4 rounded border-gray-300 text-secondary focus:ring-secondary" id="check1" type="checkbox"/>
+</div>
+<label class="text-base text-gray-700 dark:text-gray-300" for="check1">解決したい課題や目的を明確にする</label>
+</div>
+<div class="flex items-start gap-3">
+<div class="flex h-5 items-center">
+<input class="h-4 w-4 rounded border-gray-300 text-secondary focus:ring-secondary" id="check2" type="checkbox"/>
+</div>
+<label class="text-base text-gray-700 dark:text-gray-300" for="check2">ターゲットユーザーを想定する</label>
+</div>
+<div class="flex items-start gap-3">
+<div class="flex h-5 items-center">
+<input class="h-4 w-4 rounded border-gray-300 text-secondary focus:ring-secondary" id="check3" type="checkbox"/>
+</div>
+<label class="text-base text-gray-700 dark:text-gray-300" for="check3">必要な機能を洗い出す（要件定義）</label>
+</div>
+<div class="flex items-start gap-3">
+<div class="flex h-5 items-center">
+<input class="h-4 w-4 rounded border-gray-300 text-secondary focus:ring-secondary" id="check4" type="checkbox"/>
+</div>
+<label class="text-base text-gray-700 dark:text-gray-300" for="check4">使用する技術を選定する（技術スタック）</label>
+</div>
+</div>
+</section>
+<!-- Appeal Section -->
+<section class="flex flex-col gap-4" id="appeal">
+<h2 class="border-b border-border-light dark:border-border-dark pb-2 text-[22px] font-bold tracking-tight text-text-light dark:text-text-dark">効果的なアピール方法</h2>
+<p class="text-base leading-relaxed text-gray-700 dark:text-gray-300">素晴らしいプロダクトも、その魅力が伝わらなければ意味がありません。GitHubリポジトリとREADMEを整え、採用担当者の目を引く工夫をしましょう。</p>
+<!-- Info Box -->
+<div class="flex items-start gap-4 rounded-lg bg-primary/10 dark:bg-primary/20 p-4">
+<span class="material-symbols-outlined text-2xl text-primary dark:text-secondary mt-1">tips_and_updates</span>
+<div class="flex flex-col gap-1">
+<h3 class="font-bold text-primary dark:text-secondary">ヒント</h3>
+<p class="text-sm text-gray-800 dark:text-gray-200">READMEには、プロジェクトの概要だけでなく、なぜこの技術を選んだのか、開発で工夫した点、苦労した点なども記述すると、あなたの思考プロセスが伝わりやすくなります。</p>
+</div>
+</div>
+<!-- Code Snippet -->
+<div class="flex flex-col gap-2 mt-2">
+<h3 class="font-semibold text-lg">README.md 構成例</h3>
+<div class="relative rounded-lg bg-[#282c34] text-[#abb2bf] font-mono text-sm">
+<button class="absolute top-2 right-2 flex items-center gap-1 rounded bg-gray-600 px-2 py-1 text-xs text-white hover:bg-gray-500">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+                    Copy
+                  </button>
+<pre class="p-4 overflow-x-auto"><code class="language-markdown"># Project Title
+
+## 1. 概要 (Overview)
+このプロジェクトが何であるかを簡潔に説明します。
+
+## 2. 使用技術 (Tech Stack)
+- Frontend: React, Tailwind CSS
+- Backend: Node.js, Express
+- Database: PostgreSQL
+
+## 3. 機能一覧 (Features)
+- ユーザー認証機能
+- 投稿作成・編集・削除機能
+
+## 4. 使い方 (Usage)
+プロジェクトのセットアップ方法や起動方法を記述します。
+
+## 5. 工夫した点 (Key Points)
+パフォーマンス改善のために行った工夫や、こだわったUIデザインについて。</code></pre>
+</div>
+</div>
+</section>
+</div>
+</main>
+</div>
+</div>
+</div>
+</body></html>
